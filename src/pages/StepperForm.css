@@ -1,0 +1,50 @@
+.stepper-form-wrapper {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.8rem;
+}
+
+.stepper-form-wrapper .steps-container {
+  padding-inline: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  overflow: auto;
+  border-radius: 0.8rem;
+}
+
+.stepper-form-wrapper .steps {
+  border: 2px solid #0065a8;
+  padding: 0.5rem;
+  color: black;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  min-height: 40px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s;
+  position: relative;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.stepper-form-wrapper .stepper-form-container {
+  position: relative;
+  padding-block: 0.8rem;
+  padding-inline: 0.5rem;
+  border: 2px solid #0065a8;
+  margin-top: -2px;
+  border-radius: 0.8rem;
+  z-index: 1;
+}
+
+.stepper-form-wrapper .active-step {
+  color: #0065a8;
+  background: white;
+  z-index: 2;
+}
+
+@media all and (max-width: 730px) {
+  .steps {
+    font-size: small !important;
+  }
+}
